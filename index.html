@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ALIRMAZAN — IT SPECIALIST / SMM / Мобилографер / Шымкент">
+<title>ALIRMAZAN / IT SPECIALIST</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#030303;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 80% 30%,#e5092520,transparent 32%),radial-gradient(circle at 10% 70%,#e5092514,transparent 28%)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;opacity:.12;background-image:linear-gradient(#ff17380d 1px,transparent 1px),linear-gradient(90deg,#ff17380d 1px,transparent 1px);background-size:70px 70px}
+nav{position:fixed;top:0;left:0;width:100%;z-index:20;padding:22px 5%;display:flex;align-items:center;justify-content:space-between;background:#030303c9;backdrop-filter:blur(15px);border-bottom:1px solid #24070c}
+.logo{font-size:19px;font-weight:900;letter-spacing:2px}.logo span{color:#ff1838}
+.nav{display:flex;gap:28px}.nav a{color:#bbb;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:1px}.nav a:hover{color:#ff1838}
+.hero{min-height:100vh;padding:135px 5% 70px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px;position:relative;overflow:hidden}
+.heroText{z-index:3;max-width:650px}.kicker{font-size:12px;color:#aaa;letter-spacing:3px;margin-bottom:20px}.kicker b{color:#ff1738}
+h1{font-size:clamp(58px,9vw,125px);line-height:.84;letter-spacing:-7px;text-transform:uppercase}h1 .red{color:#ff1738}
+.subtitle{font-size:18px;color:#aaa;margin-top:20px;letter-spacing:1px}.name{font-size:clamp(48px,7vw,100px);font-weight:900;margin-top:15px;line-height:.9}
+.location{margin-top:25px;color:#ddd}.location b{color:#ff1738}.desc{max-width:500px;color:#888;line-height:1.7;margin-top:25px}
+.actions{display:flex;gap:15px;flex-wrap:wrap;margin-top:30px}.btn{padding:16px 24px;text-decoration:none;color:#fff;border:1px solid #ff1738;font-size:11px;letter-spacing:1px;transition:.3s}.btn.primary{background:#ff1738;box-shadow:0 0 25px #ff173833}.btn:hover{transform:translateY(-4px);box-shadow:0 0 30px #ff173855}
+.photoWrap{position:relative;min-height:650px;display:flex;align-items:center;justify-content:center}.photoWrap:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:#ff17380e;box-shadow:0 0 100px #ff173822}
+.photo{position:relative;width:min(100%,600px);border:1px solid #55101a;box-shadow:0 0 70px #ff00151a;transition:.2s}.photo img{width:100%;display:block;filter:saturate(.9) contrast(1.08)}
+.badge{position:absolute;right:8%;top:12%;width:65px;height:65px;border:2px solid #ff1738;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#ff1738;background:#050505;box-shadow:0 0 30px #ff173855}
+.scan{position:absolute;left:0;right:0;top:30%;height:1px;background:#ff1738;box-shadow:0 0 18px #ff1738;opacity:.7;animation:scan 4s linear infinite}@keyframes scan{0%{top:20%}50%{top:80%}100%{top:20%}}
+.marquee{border-block:1px solid #25080d;padding:16px;overflow:hidden;white-space:nowrap;color:#777;letter-spacing:4px;font-size:10px}.track{display:inline-block;animation:move 22s linear infinite}@keyframes move{to{transform:translateX(-50%)}}
+.section{padding:105px 5%;border-bottom:1px solid #1d070b}.head{margin-bottom:45px}.head small{color:#ff1738;letter-spacing:4px}.head h2{font-size:clamp(42px,7vw,90px);letter-spacing:-5px;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:30px 24px;min-height:250px;border:1px solid #261016;background:linear-gradient(145deg,#100507,#050505);transition:.4s}.card:hover{transform:translateY(-10px);border-color:#ff1738;box-shadow:0 20px 50px #ff001522}.icon{font-size:32px;color:#ff1738;margin-bottom:45px}.card h3{font-size:20px}.card p{color:#777;line-height:1.6;margin-top:12px;font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.aboutText{color:#999;line-height:1.8;max-width:600px}.aboutText b{color:#fff}.skills{display:grid;gap:18px}.skillTop{display:flex;justify-content:space-between;color:#aaa;font-size:11px;margin-bottom:8px}.bar{height:5px;background:#180b0d}.bar i{display:block;height:100%;background:#ff1738;box-shadow:0 0 12px #ff1738;transform-origin:left;animation:load 1.5s ease}@keyframes load{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.socials{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.social{padding:20px;border:1px solid #281017;color:#fff;text-decoration:none;transition:.3s}.social:hover{border-color:#ff1738;transform:translateY(-5px)}.social b{color:#ff1738;display:block;margin-bottom:7px}.social span{color:#777;font-size:12px}
+footer{padding:35px 5%;display:flex;justify-content:space-between;color:#555;font-size:10px;letter-spacing:2px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.photoWrap{min-height:auto;padding-top:30px}.cards{grid-template-columns:repeat(2,1fr)}.nav{display:none}}
+@media(max-width:600px){.hero{padding-top:125px}h1{letter-spacing:-4px}.name{font-size:48px}.photoWrap{min-height:380px}.cards,.socials,.two{grid-template-columns:1fr}.section{padding:75px 5%}footer{flex-direction:column;gap:12px}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo"><span>ALIRMAZAN</span> / IT SPECIALIST</div>
+<div class="nav"><a href="#home">ГЛАВНАЯ</a><a href="#about">ОБО МНЕ</a><a href="#services">УСЛУГИ</a><a href="#portfolio">ПОРТФОЛИО</a><a href="#contacts">КОНТАКТЫ</a></div>
+</nav>
+
+<section class="hero" id="home">
+<div class="heroText">
+<div class="kicker"><b>&lt;/&gt;</b> DIGITAL / CODE / 3D</div>
+<h1><span class="red">IT</span> SPECIALIST</h1>
+<div class="subtitle">SMM / МОБИЛОГРАФЕР / IT SPECIALIST</div>
+<div class="name">ALIRMAZAN</div>
+<div class="location"><b>●</b> ШЫМКЕНТ</div>
+<p class="desc">Создаю цифровые решения, продвигаю бренды и снимаю контент, который работает.</p>
+<div class="actions"><a class="btn primary" href="#services">МОИ УСЛУГИ →</a><a class="btn" href="#portfolio">ПОРТФОЛИО</a></div>
+</div>
+<div class="photoWrap">
+<div class="photo"><img src="profile.png" alt="ALIRMAZAN"><div class="scan"></div></div>
+<div class="badge">3D</div>
+</div>
+</section>
+
+<div class="marquee"><div class="track">IT SPECIALIST • WEB DEVELOPMENT • SMM • MOBILOGRAPHY • IT SUPPORT • 3D • ALIRMAZAN • IT SPECIALIST • WEB DEVELOPMENT • SMM • MOBILOGRAPHY • 3D • </div></div>
+
+<section class="section" id="about">
+<div class="head"><small>01 / ОБО МНЕ</small><h2>WHO I AM</h2></div>
+<div class="two">
+<p class="aboutText">Я <b>IT-специалист</b>, занимаюсь разработкой, настройкой и оптимизацией цифровых решений. Также занимаюсь SMM-продвижением и мобилографией. Моя цель — создавать качественные продукты, которые помогают проектам расти и выделяться.</p>
+<div class="skills">
+<div><div class="skillTop"><span>WEB DEVELOPMENT</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+<div><div class="skillTop"><span>SMM MARKETING</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+<div><div class="skillTop"><span>VIDEO EDITING</span><span>88%</span></div><div class="bar"><i style="width:88%"></i></div></div>
+<div><div class="skillTop"><span>IT SUPPORT</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="head"><small>02 / УСЛУГИ</small><h2>WHAT I DO</h2></div>
+<div class="cards">
+<div class="card"><div class="icon">&lt;/&gt;</div><h3>РАЗРАБОТКА</h3><p>Веб-сайты, интерактивные страницы и автоматизация.</p></div>
+<div class="card"><div class="icon">▥</div><h3>SMM</h3><p>Продвижение проектов и создание контента для соцсетей.</p></div>
+<div class="card"><div class="icon">◉</div><h3>МОБИЛОГРАФИЯ</h3><p>Съёмка и монтаж коротких видео и Reels.</p></div>
+<div class="card"><div class="icon">⚙</div><h3>IT ПОДДЕРЖКА</h3><p>Настройка, ремонт, консультации и цифровые решения.</p></div>
+</div>
+</section>
+
+<section class="section" id="portfolio">
+<div class="head"><small>03 / ПОРТФОЛИО</small><h2>SELECTED WORK</h2></div>
+<div class="cards">
+<div class="card"><div class="icon">01</div><h3>WEB EXPERIENCE</h3><p>Красно-чёрный интерактивный интерфейс с 3D-эффектами.</p></div>
+<div class="card"><div class="icon">02</div><h3>CONTENT</h3><p>Визуальный контент и монтаж для социальных сетей.</p></div>
+<div class="card"><div class="icon">03</div><h3>3D / MOTION</h3><p>Анимированные элементы, частицы, glow и motion effects.</p></div>
+<div class="card"><div class="icon">04</div><h3>DIGITAL</h3><p>Современные цифровые решения под задачу проекта.</p></div>
+</div>
+</section>
+
+<section class="section" id="contacts">
+<div class="head"><small>04 / КОНТАКТЫ</small><h2>LET'S WORK</h2></div>
+<div class="socials">
+<a class="social" href="https://wa.me/77762157762" target="_blank"><b>WHATSAPP</b><span>Написать IT SPECIALIST</span></a>
+<a class="social" href="https://www.tiktok.com/@nxe.738" target="_blank"><b>TIKTOK</b><span>@nxe.738</span></a>
+<a class="social" href="https://www.instagram.com/alirmazan_2007/" target="_blank"><b>INSTAGRAM</b><span>@alirmazan_2007</span></a>
+</div>
+</section>
+
+<footer><span>&gt; system.out.println("ALIRMAZAN");</span><span>© 2026 ALIRMAZAN | IT SPECIALIST</span><span>DESIGNED WITH ♥</span></footer>
+<script>
+const photo=document.querySelector('.photo');
+addEventListener('pointermove',e=>{
+const x=(e.clientX/innerWidth-.5)*2,y=(e.clientY/innerHeight-.5)*2;
+photo.style.transform=`perspective(1000px) rotateY(${-x*7}deg) rotateX(${y*4}deg)`;
+});
+</script>
+</body>
+</html>
